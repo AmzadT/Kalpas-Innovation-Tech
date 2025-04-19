@@ -15,6 +15,7 @@ bookRouter.get('/', async (req, res) => {
   }
 });
 
+
 // GET book by ID
 bookRouter.get('/:id', async (req, res) => {
   try {
@@ -29,6 +30,7 @@ bookRouter.get('/:id', async (req, res) => {
   }
 });
 
+
 // POST create a new book
 bookRouter.post('/', async (req, res) => {
   try {
@@ -40,6 +42,7 @@ bookRouter.post('/', async (req, res) => {
     res.status(400).json({ error: 'Error creating book' });
   }
 });
+
 
 // PUT update a book
 bookRouter.put('/:id', async (req, res) => {
@@ -56,6 +59,7 @@ bookRouter.put('/:id', async (req, res) => {
     res.status(400).json({ error: 'Error updating book' });
   }
 });
+
 
 // DELETE book by ID
 bookRouter.delete('/:id', async (req, res) => {
